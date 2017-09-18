@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
 
+  before_action :unthenticated_user!
+
   def index
     @groups = Group.all
   end

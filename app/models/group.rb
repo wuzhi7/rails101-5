@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
 
-  validates :title, prensence: true
+  validates :title, presence: true
 
 end

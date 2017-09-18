@@ -41,7 +41,7 @@ class GroupsController < ApplicationController
     redirect_to groups_path
   end
 
-  Private
+  private
 
   def group_params
     params.require(:group).permit(:title, :description)

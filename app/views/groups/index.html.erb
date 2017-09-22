@@ -29,6 +29,7 @@
                           method: :delete, data: { confirm: "Are you sure?" } )%>
           </td>
           <% end %>
+          <%= render :partial => "group_item", :collection => @groups, :as => :group %>
         </tr>
       <% end %>
     </tbody>
